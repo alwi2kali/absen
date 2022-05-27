@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Lokasi;
+use App\Absen;
 use App\Shift;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -13,6 +14,11 @@ class StafController extends Controller
         
 
         return view('staf.home');
+    }
+    public function absen(){
+        $absen= Absen::with('User')->get();
+
+        return view('staf.absen',compact('absen'));
     }
 
     public function lokasi(){

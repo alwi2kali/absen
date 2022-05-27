@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 //
     Route::middleware('admin_check')->group(function (){
     Route::get('/staf','StafController@index')->name('staf');
+    Route::get('/staf/absen','StafController@absen')->name('absen');
     Route::get('/staf/lokasi','StafController@lokasi')->name('staf.lokasi');
     Route::get('/staf/shift','StafController@shift')->name('staf.shift');
     Route::post('/staf/lokasi/store','StafController@store_lokasi')->name('store.lokasi');

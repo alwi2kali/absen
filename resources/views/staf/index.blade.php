@@ -85,7 +85,7 @@
                     <a href="{{route('staf.shift')}}"> <i class="menu-icon fa fa-plus"></i>Shift</a>
                 </li>
                 <li class="">
-                    <a href=""> <i class="menu-icon fa fa-list"></i>data absen</a>
+                    <a href="{{route('absen')}}"> <i class="menu-icon fa fa-list"></i>data absen</a>
                 </li>     
             </ul>
         </div><!-- /.navbar-collapse -->
